@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>App Doctor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="tela-sistema-cadastro-paciente.component.css">
+  </head>
+  <body>
+
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+	  		<h1><a href="tela-sistema.component.html" class="logo">AppDoctor</a></h1>
+        
+        
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3 icone"></span> Página Inicial</a>
+          </li>
+
+          <li>
+              <a href="#"><span class="fa fa-user-md mr-3 icone">
+              </span> Cadastrar Médico</a>
+          </li>
+
+          
+          <li>
+            <a href="#"><span class="fa fa-search mr-3 icone icone">
+            </span> Pesquisar Médico</a>
+          </li> 
+
+
+
+          <li>
+            <a href="#"><span class="fa fa-user mr-3 icone icone-cadastrar-medico"  style="color:rgb(255, 255, 255)"> 
+
+            </span> <strong>Cadastrar Paciente</strong></a>
+          </li> 
+
+        
+          <li>
+            <a href="#"><span class="fa fa-search mr-3 icone"></span> Pesquisar Paciente</a>
+          </li> 
+
+          <li>
+            <a href="#"><span class="fa fa-address-card-o mr-3 icone"></span> Realizar Consulta</a>
+          </li>
+
+        
+          <!-- <li>
+            <a href="#"><span class="fa fa-cogs mr-3"></span> Configurações</a>
+          </li> -->
+        </ul>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <header>
+         <h3 id="titulo"> <span class="fa fa-user-plus icone-titulo"></span>Cadastrar Paciente</h3>
+        </header>
+
+        <div class="formulario">
+          <form>
+            <div class="row nome col-12">
+              <div class="col nome">
+                <label>Nome Completo</label>
+                <input type="text" class="form-control input" placeholder="Digite o Nome">
+              </div>
+            </div>
+
+            <div class="row nascimento-crm-telefone col-12">
+                <div class="form-group col-4" >
+                  <label class="data-nascimento">Data de Nascimento</label>
+                  <input  class="form-control input" type="date" name="begin" placeholder="Data de Nascimento" value="" min="1940-01-01" max="2023-12-31">
+                </div>
+
+                <div class="form-group col-4">
+                  <label>CPF</label>
+                  <input type="number" class="form-control input" id="inputFone" placeholder="Digite o CPF" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
+                </div>
+
+
+                <div class="form-group col-4">
+                  <label>Telefone</label>
+                  <input type="text"  name="telefone" class="form-control input" id="inputFone" placeholder="Digite o telefone" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+
+            </div>
+
+            <div class= "row endereco-1 col-12 ">
+              <div class="col-8">
+                <label>Endereço</label>
+                <input type="text" class="form-control input" id="inputAddress" placeholder="Ex: Rua Alameda dos Maracatins">
+              </div>
+               
+              <div class="col-4">
+                <label>Número</label>
+                <input type="text" class="form-control input" id="inputAddress" placeholder="Ex: 398">
+              </div>
+            </div>
+
+           
+            <div class="row endereco-2 col-12">
+                <div class="col-md-6 col-sm-6">
+                    <label>Estado</label>
+                    <input  type="text" class="form-control input" placeholder="Ex: São Paulo">
+                </div>
+               
+                <div class="col-md-3 col-sm-3">
+                  <label>Cidade</label>
+                  <input  type="text" class="form-control input" placeholder="Ex: SP">
+                </div>
+                
+                <div class="col-md-3 col-sm-3">
+                  <label>CEP</label>
+                  <input type="text" class="form-control input" placeholder="Ex: 04089-000">
+                </div>
+            </div>
+
+              <div class= "row senha col-12 ">
+               
+                  <div class="col-6">
+                    <label>Senha</label>
+                    <input type="password" id="inputPassword5" class="form-control input input-senha" aria-describedby="passwordHelpBlock" placeholder="Senha">
+                  </div>
+
+                  <div class="col-6">
+                    <label>Confirmar Senha</label>
+                    <input type="password" id="inputPassword5" class="form-control input input-confirmar-senha" aria-describedby="passwordHelpBlock" placeholder="Confirmar Senha">
+                  </div>
+              </div>
+
+              <div>
+                <small id="dica-senha" class="form-text text-muted dica-senha">
+                  Sua senha deve ter entre 8 e 20 caracteres, os quais devem ser letras,sem espaços, com pelo menos 1 número e 1 caracter especial.
+                </small>                
+              </div>
+          </form>
+
+        </div>
+      </div>
+	</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+
+</body>
+</html>
+
+
